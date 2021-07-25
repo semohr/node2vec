@@ -36,6 +36,6 @@ def is_symmetric(matrix):
 
 
 def wv_to_numpy_array(wv):
-    vocab_keys = [int(key) for key in wv.vocab.keys()]
+    vocab_keys = [int(key) for key in wv.index_to_key]
     embeddings = [wv[str(key)] for key in sorted(vocab_keys)]
     return np.array(embeddings, dtype=np.float32)
