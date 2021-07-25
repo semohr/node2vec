@@ -235,12 +235,12 @@ class Node2Vec:
         walks = self._walks.astype(str).tolist()
         word2vec_args = {
             "sentences": walks,
-            "size": dimensions,
+            "vector_size": dimensions,
             "window": context_size,
             "min_count": 0,
             "sg": 1,  # use skip-gram
             "workers": workers,
-            "iter": epochs,
+            "epochs": epochs,
         }
 
         if rand_seed is not None:
