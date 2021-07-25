@@ -1,7 +1,7 @@
-numpy==1.18.0
-scipy==1.4.1
-gensim==3.8.1
-networkx==2.4
+numpy
+scipy
+gensim
+networkx
 pybind11==2.4.3
 psutil==5.6.7
 mypy==0.750
